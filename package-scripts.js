@@ -23,6 +23,10 @@ module.exports = {
       script: `browserify ./browser-entry --plugin ./scripts/dedefine --ignore 'fs' --ignore 'glob' --ignore 'path' --ignore 'supports-color' > mocha.js`,
       description: 'Build browser bundle'
     },
+    'build-miniapp': {
+      script: `browserify ./miniapp-entry --plugin ./scripts/dedefine --ignore 'fs' --ignore 'glob' --ignore 'path' --ignore 'supports-color' > ~/ifanr/mocha-miniapp/vendor/mocha.js`,
+      description: 'Build browser bundle'
+    },
     lint: {
       default: {
         script: 'nps lint.code lint.markdown',
