@@ -25,7 +25,7 @@ module.exports = {
     },
     'build-miniapp': {
       script: `browserify ./miniapp-entry --plugin ./scripts/dedefine --ignore 'fs' --ignore 'glob' --ignore 'path' --ignore 'supports-color' > ~/ifanr/mocha-miniapp/vendor/mocha.js`,
-      description: 'Build browser bundle'
+      description: 'Build miniapp bundle'
     },
     lint: {
       default: {
